@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/ic_profile"
+            android:id="@+id/chat_profile_image"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="user name"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/chat_profile_name"/>
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/online"
+                    android:layout_margin="5dp"
+                    android:visibility="invisible"
+                    android:id="@+id/chat_profile_online"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="country"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/chat_profile_country"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="status"
+                android:textAlignment="textStart"
+                android:textSize="14sp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/chat_profile_status"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

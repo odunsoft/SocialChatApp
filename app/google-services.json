@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "735177352636",
+    "firebase_url": "https://socialcchatt.firebaseio.com",
+    "project_id": "socialcchatt",
+    "storage_bucket": "socialcchatt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735177352636:android:94f2cf14a080c89ae8f7b9",
+        "android_client_info": {
+          "package_name": "com.odunyazilim.socialcchatt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735177352636-58v1f0dvi4m5efl2825u5rgmlkbbid52.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.odunyazilim.socialcchatt",
+            "certificate_hash": "4c2f6f855e6fdd7e8da6a1700dca3665e113e006"
+          }
+        },
+        {
+          "client_id": "735177352636-v1dsk9q7rufsdskf1o433poh7jmlv6up.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbnyTUgCYaAMcQK0Xsu7_XqMrudHsh6fM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735177352636-v1dsk9q7rufsdskf1o433poh7jmlv6up.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC379</color>
+    <color name="colorPrimaryDark">#FFA10E</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="buttoncolor">#490657</color>
+    <color name="yazicolor">#505050</color>
+    <color name="etlightcolor">#D8D8D8</color>
+    <color name="etdarkcolor">#535252</color>
+    <color name="sendrequestcolor">#59EB38</color>
+    <color name="declinerequestcolor">#8A8989</color>
+    <color name="sendercolor">#FCEDEE</color>
+    <color name="abouttcolor">#FAECFF</color>
+    <color name="countcolor">#FF77A4</color>
+</resources>

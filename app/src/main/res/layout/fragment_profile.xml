@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <include layout="@layout/toolbar_profille"
+        android:id="@+id/profilleToolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profilleToolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/randommmmm"
+                    android:layout_centerHorizontal="true"
+                    app:civ_border_width="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    app:civ_border_color="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:maxLines="1"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_below="@id/profile_image"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_name"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="5dp">
+
+
+                <LinearLayout
+                    android:id="@+id/lin_friend_diamond"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_group"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/profile_friend_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:maxLines="1"
+                        android:text="0"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/yazicolor"
+                        android:textSize="19sp" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="@string/friends"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/yazicolor"
+                        android:textSize="19sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_diamond_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lin_age_gen"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_diamond"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/profile_diamond_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:maxLines="1"
+                        android:layout_marginTop="3dp"
+                        android:text="0"
+                        android:textColor="@color/yazicolor"
+                        android:textSize="19sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:maxLines="1"
+                        android:text="@string/diamonds"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/yazicolor"
+                        android:layout_marginStart="10dp"
+                        android:textSize="19sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview1"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:padding="5dp">
+
+
+                <LinearLayout
+                    android:id="@+id/lin_age_gen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_user_kalp"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/profile_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:maxLines="1"
+                        android:text="@string/female"
+                        android:textColor="@color/yazicolor"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/profile_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="25"
+                        android:textColor="@color/yazicolor"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_count_cit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lin_age_gen"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_user_dunya"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/profile_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:maxLines="1"
+                        android:text="@string/country"
+                        android:textColor="@color/yazicolor"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="22sp"/>
+
+
+                    <TextView
+                        android:id="@+id/profile_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/user_profile_country"
+                        android:layout_marginEnd="15dp"
+                        android:maxLines="1"
+                        android:text="@string/city"
+                        android:textColor="@color/yazicolor"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/cardview2"
+                android:padding="5dp">
+
+
+                <LinearLayout
+                    android:id="@+id/lin_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardview2"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_user_about"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/tv_aboutt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:padding="5dp"
+                        android:text="@string/about"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/profile_aboutt"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_below="@id/lin_about"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginEnd="15dp"
+                    android:maxLines="4"
+                    android:padding="5dp"
+                    android:text="About"
+                    android:textColor="@color/yazicolor"
+                    android:textSize="20sp"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/edit_profile_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/etdarkframe"
+                android:layout_below="@id/cardview3"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/ic_profile_edit"
+                android:drawableEnd="@drawable/ic_profile_yon"
+                android:drawablePadding="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/edit_profile"
+                android:textColor="@color/yazicolor"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/vip_mode_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/etdarkframe"
+                android:layout_below="@id/edit_profile_tv"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/ic_profile_vip"
+                android:drawableEnd="@drawable/ic_profile_yon"
+                android:drawablePadding="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:gravity="center_vertical"
+                android:text="Vip Mode"
+                android:textColor="@color/yazicolor"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/account_settings_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/etdarkframe"
+                android:layout_below="@id/vip_mode_tv"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/ic_profile_settings"
+                android:drawableEnd="@drawable/ic_profile_yon"
+                android:drawablePadding="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/account_settings"
+                android:textColor="@color/yazicolor"
+                android:textSize="20sp"/>
+
+
+
+            <TextView
+                android:id="@+id/logout_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/etdarkframe"
+                android:layout_below="@id/account_settings_tv"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/ic_profile_logout"
+                android:drawableEnd="@drawable/ic_profile_yon"
+                android:drawablePadding="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center_vertical"
+                android:text="@string/logout"
+                android:textColor="@color/yazicolor"
+                android:textSize="20sp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

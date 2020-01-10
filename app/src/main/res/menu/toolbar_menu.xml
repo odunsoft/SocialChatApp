@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:id="@+id/toolbar_filter"
+        android:title="Filter"
+        android:icon="@drawable/ic_filter"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/toolbar_notifications"
+        android:title="Notifications"
+        android:icon="@drawable/ic_notifications"
+        app:showAsAction="ifRoom"/>
+
+</menu>

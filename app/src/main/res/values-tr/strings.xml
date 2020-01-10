@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MirketChatt</string>
+    <string name="age">Yaş</string>
+    <string name="chat">Chat</string>
+    <string name="email">Eposta</string>
+    <string name="by_register_you_agree_to_n_privacy_policy_and_terms_and_conditions">Kayıt olarak Gizlilik Politikası ve Kullanım Şartlarını kabul etmiş olursunuuz</string>
+    <string name="city">Şehir</string>
+    <string name="don_t_you_have_account_n_register_now">Hesabın Yoksa Hemen Kayıt Ol</string>
+    <string name="explore">Keşfet</string>
+    <string name="female">Kadın</string>
+    <string name="forgot_password">Şifreni Mi Unuttun?</string>
+    <string name="friends">Arkadaşlarım</string>
+    <string name="login">Giriş Yap</string>
+    <string name="male">Erkek</string>
+    <string name="password">Şifre</string>
+    <string name="please_enter_your_email_n_we_ll_send_you_a_link_to_reset_n_your_password">Lütfen email adresinizi girin. Sıfırlama için link göndereceğiz</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="profile">Profil</string>
+    <string name="register">Kayıt Ol</string>
+    <string name="send">Gönder</string>
+    <string name="terms_and_conditions">Kullanım Şartları</string>
+    <string name="username">Kullanıcı Adı</string>
+    <string name="write_your_email">Email yazınız</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">Hakkında</string>
+    <string name="account_settings">Hesap Ayarları</string>
+    <string name="cancel">Çıkış</string>
+    <string name="country">Ulke</string>
+    <string name="diamonds">Elmaslar</string>
+    <string name="edit_profile">Profili Duzenle</string>
+    <string name="follow">Takip Et</string>
+    <string name="logout">Çıkış Yap</string>
+    <string name="search">Ara</string>
+    <string name="chats">Mesajlar</string>
+    <string name="my_profile">Profilim</string>
+</resources>
