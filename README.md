@@ -2,8 +2,8 @@
 Social Chat Application With Firebase 
 
 
-This was my first learning project so maybe it doesn' t include best practice for methods or usages. And don't care the design of application.
-You have to connect to new Firebase realtime database if you want to use. ( I had to disconnect because I had a technical failure in firebase )
+This was my first learning project so maybe it doesn' t include best practice for methods or usages. And don't care the design of application. I will improve that with a new project. 
+
 
 Projects has:
 - Login / Register
